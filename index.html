@@ -41,7 +41,7 @@
 					<section>
 						<p>In JavaScript, a regular expression is an object, which can be defined in two ways.</p>
 						<p>The first is by instantiating a new RegExp object using the constructor:</p>
-						<img data-src="public/1.PNG" alt="" height="200" width="800">
+						<img data-src="public/1.PNG" alt="">
 						<p>The second is using the regular expression literal form:</p>
 						<img src="./public/2.PNG" alt="">
 						<aside class="notes">
@@ -53,7 +53,7 @@
 					<section>
 						<h1>How does it work?</h1>
 						<p>You can test the regex using RegExp.test(String), which returns a boolean</p>
-						<img src="/public/3.png" alt="">
+						<img src="/public/3.PNG" alt="">
 						<aside class="notes">
 							The regular expression we defined as re1 above is a very simple one. It searches the string hey, without any limitation: the string can contain lots of text, and hey in the middle, and the regex is satisfied. It could also contain just hey, and it will be satisfied as well.
 							That’s pretty simple.
@@ -64,16 +64,16 @@
 				<section>
 					<section>
 						<h1>Anchoring</h1>
-						<img src="images/4.png" alt="">
+						<img src="public/4.PNG" alt="">
 						<aside class="notes">
 							matches hey wherever it was put inside the string.
 						</aside>
 					</section>
 					<section>
 						<p>The ^ operator</p>
-						<img src="images/5.png" alt="">
+						<img src="public/5.PNG" alt="">
 						<p>The $ operator</p>
-						<img src="images/6.png" alt="">
+						<img src="public/6.PNG" alt="">
 						<aside class="notes">
 							If you want to match strings that start with hey, use the ^ operator:
 							If you want to match strings that end with hey, use the $ operator:
@@ -81,9 +81,9 @@
 					</section>
 					<section>
 						<p>Combine</p>
-						<img src="images/7.png" alt="">
+						<img src="public/7.PNG" alt="">
 						<p>The .* operator</p>
-						<img src="images/8.png" alt="">
+						<img src="public/8.PNG" alt="">
 						<aside class="notes">
 							To match a string that starts with a substring and ends with another, you can use .*, which matches any character repeated 0 or more times:
 						</aside>
@@ -93,8 +93,8 @@
 					<section>
 						<h1>Match items in ranges</h1>
 						<p>You can choose to match any character in a range</p>
-						<img src="images/9.png" alt="">
-						<img src="images/10.png" alt="">
+						<img src="public/9.PNG" alt="">
+						<img src="public/10.PNG" alt="">
 						<aside class="notes">
 							Instead of matching a particular string, you can choose to match any character in a range, like:
 
@@ -103,12 +103,12 @@
 					</section>
 					<section>
 						<p>Ranges can be combined</p>
-						<img src="images/11.png" alt="">
-						<img src="images/12.png" alt="">
+						<img src="public/11.PNG" alt="">
+						<img src="public/12.PNG" alt="">
 					</section>
 					<section>
 						<h1>Matching a range item multiple times</h1>
-						<img src="images/13.png" alt="">
+						<img src="public/13.PNG" alt="">
 						<aside class="notes">
 							You can check if a string contains one an only one character in a range, by starting the regex with ^ and ending with the $ char:
 						</aside>
@@ -116,7 +116,7 @@
 				</section>
 				<section>
 					<h1>Negating a pattern</h1>
-					<img src="images/14.png" alt="">
+					<img src="public/14.PNG" alt="">
 					<aside class="notes">
 						The ^ character at the beginning of a pattern anchors it to the beginning of a string.
 Used inside a range, it negates it, so:
@@ -138,7 +138,7 @@ Used inside a range, it negates it, so:
 				<section>
 					<h1>Regular expressions choices</h1>
 					<p>The | operator</p>
-					<img src="images/15.png" alt="">
+					<img src="public/15.PNG" alt="">
 					<aside class="notes">
 						If you want to search one string or another, use the | operator.
 					</aside>
@@ -146,9 +146,9 @@ Used inside a range, it negates it, so:
 				<section>
 					<section>
 						<h1>Quantifiers</h1>
-						<img src="images/16.png" alt="">
+						<img src="public/16.PNG" alt="">
 						<p>The ? operator</p>
-						<img src="images/17.png" alt="">
+						<img src="public/17.PNG" alt="">
 						<aside class="notes">
 							Say you have this regex, that checks if a string has one digit in it, and nothing else:
 You can use the ? quantifier to make it optional, thus requiring zero or one:
@@ -157,24 +157,24 @@ You can use the ? quantifier to make it optional, thus requiring zero or one:
 					<section>
 						<h1>+</h1>
 						<p>Match one or more (>=1) items</p>
-						<img src="images/18.png" alt="">
+						<img src="public/18.PNG" alt="">
 					</section>
 					<section>
 						<h1>*</h1>
 						<p>Match 0 or more (>= 0) items</p>
-						<img src="images/19.png" alt="">
+						<img src="public/19.PNG" alt="">
 					</section>
 					<section>
 						<h1>{n}</h1>
 						<p>Match n items</p>
-						<img src="images/20.png" alt="">
+						<img src="public/20.PNG" alt="">
 					</section>
 					<section>
 						<h1>{n,m}</h1>
 						<p>Match between n and m times:</p>
-						<img src="images/21.png" alt="">
+						<img src="public/21.PNG" alt="">
 						<p>At least n items</p>
-						<img src="images/22.png" alt="">
+						<img src="public/22.PNG" alt="">
 						<aside class="notes">
 							m can be omitted to have an open ending to have at least n items:
 						</aside>
@@ -182,7 +182,7 @@ You can use the ? quantifier to make it optional, thus requiring zero or one:
 				</section>
 				<section>
 					<h1>Optional items</h1>
-					<img src="images/23.png" alt="">
+					<img src="public/23.PNG" alt="">
 					<aside class="notes">
 						Following an item with ? makes it optional:
 					</aside>
@@ -191,8 +191,8 @@ You can use the ? quantifier to make it optional, thus requiring zero or one:
 					<section>
 						<h1>Groups</h1>
 						<p>Using parentheses, you can create groups of characters: (...)</p>
-						<img src="images/24.png" alt="">
-						<img src="images/25.png" alt="">
+						<img src="public/24.PNG" alt="">
+						<img src="public/25.PNG" alt="">
 						<aside class="notes">
 							Using round brackets, you can create groups of characters: (...)
 This example matches exactly 3 digits followed by one or more alphanumeric characters:
@@ -215,22 +215,22 @@ By default, a Group is a Capturing Group. Now, instead of using RegExp.test(Stri
 					</section>
 					<section>
 						<p>If there is no match, it returns null</p>
-						<img src="images/26.png" alt="">
-						<img src="images/27.png" alt="">
+						<img src="public/26.PNG" alt="">
+						<img src="public/27.PNG" alt="">
 						<aside class="notes">
 They are exactly the same, and return an Array with the whole matched string in the first item, then each matched group content.
 						</aside>
 					</section>
 					<section>
 						<h1>Optional groups</h1>
-						<img src="images/28.png" alt="">
+						<img src="public/28.PNG" alt="">
 						<aside class="notes">
 							A capturing group can be made optional by using (...)?. If it’s not found, the resulting array slot will contain undefined:
 						</aside>
 					</section>
 					<section>
 						<h1>Using match and exec without groups</h1>
-						<img src="images/29.png" alt="">
+						<img src="public/29.PNG" alt="">
 						<aside class="notes">
 							There is a difference with using match and exec without groups: the first item in the array is not the whole matched string, but the match directly:
 						</aside>
@@ -238,7 +238,7 @@ They are exactly the same, and return an Array with the whole matched string in 
 					<section>
 						<h1>Noncapturing Groups</h1>
 						<p>If you need a way to ignore some groups in the resulting array</p>
-						<img src="images/30.png" alt="">
+						<img src="public/30.PNG" alt="">
 						<aside class="notes">
 							Since by default groups are Capturing Groups, you need a way to ignore some groups in the resulting array. This is possible using Noncapturing Groups, which start with an (?:...)
 						</aside>
@@ -253,8 +253,8 @@ They are exactly the same, and return an Array with the whole matched string in 
 						<li>s: (new in ES2018) short for single line,</li>
 						<li>u: enables support for unicode </li>
 					</ul>
-					<img src="images/31.png" alt="">
-					<img src="images/32.png" alt="">
+					<img src="public/31.PNG" alt="">
+					<img src="public/32.PNG" alt="">
 				</section>
 				<section>
 					<h1>Inspecting a regex</h1>
@@ -266,7 +266,7 @@ They are exactly the same, and return an Array with the whole matched string in 
 						<li>ignoreCase true with the i flag</li>
 						<li>lastIndex</li>
 					</ul>
-					<img src="images/33.png" alt="">
+					<img src="public/33.PNG" alt="">
 				</section>
 				<section>
 					<h1>Escaping</h1>
@@ -284,7 +284,7 @@ They are exactly the same, and return an Array with the whole matched string in 
 						<li>^</li>
 						<li>$</li>
 					</ul>
-					<img src="images/34.png" alt="">
+					<img src="public/34.PNG" alt="">
 					<aside class="notes">
 						They are special because they are control characters that have a meaning in the regular expression pattern, so if you want to use them inside the pattern as matching characters, you need to escape them, by prepending a backslash:
 					</aside>
@@ -293,8 +293,8 @@ They are exactly the same, and return an Array with the whole matched string in 
 					<section>
 						<h1>Replacing using Regular Expressions</h1>
 						<p>The String object in JavaScript has a replace() method, which can be used without regular expressions to perform a single replacement on a string</p>
-						<img src="images/35.png" alt="">
-						<img src="images/36.png" alt="">
+						<img src="public/35.PNG" alt="">
+						<img src="public/36.PNG" alt="">
 						<aside class="notes">
 							We already saw how to check if a string contains a pattern.
 We also saw how to extract parts of a string to an array, matching a pattern.
@@ -304,11 +304,11 @@ The String object in JavaScript has a replace() method, which can be used withou
 					</section>
 					<section>
 						<p>Using the g flag is the only way to replace multiple occurrences in a string</p>
-						<img src="images/37.png" alt="">
-						<img src="images/38.png" alt="">
+						<img src="public/37.PNG" alt="">
+						<img src="public/38.PNG" alt="">
 					</section>
 					<section>
-						<img src="images/39.png" alt="">
+						<img src="public/39.PNG" alt="">
 						<aside class="notes">
 							Instead of using a string you can use a function, to do even fancier things. It will receive a number of arguments like the one returned by String.match(RegExp) or RegExp.exec(String), with a number of arguments that depends on the number of groups:
 						</aside>
